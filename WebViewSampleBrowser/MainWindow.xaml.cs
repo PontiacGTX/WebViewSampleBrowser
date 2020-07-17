@@ -157,8 +157,8 @@ namespace WebViewSampleBrowser
             String uri = args.Uri;
             if (!buttonTriggered)
             {
-                if (!string.IsNullOrEmpty(url))
-                    model[TAB_INDEX].HistoryURL.Add(new HistoryModel.URLData { historyURL = url = addressBar.Text = uri, Title = webView.CoreWebView2.DocumentTitle });
+               // if (!string.IsNullOrEmpty(url))
+               //     model[TAB_INDEX].HistoryURL.Add(new HistoryModel.URLData { historyURL = url = addressBar.Text = uri, Title = webView.CoreWebView2.DocumentTitle });
                 if (!string.IsNullOrEmpty(addressBar.Text))
                     addressBar.Text = uri;
             }
